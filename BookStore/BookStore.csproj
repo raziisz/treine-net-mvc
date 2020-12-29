@@ -137,9 +137,6 @@
       <DependentUpon>202012291816589_v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Autor.cs" />
-    <Compile Include="Models\Categoria.cs" />
-    <Compile Include="Models\Livro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +196,12 @@
     <EmbeddedResource Include="Migrations\202012291816589_v1.resx">
       <DependentUpon>202012291816589_v1.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookStore.Domain\BookStore.Domain.csproj">
+      <Project>{7284bdaf-58a8-4b71-939d-6ffcf0e7fb23}</Project>
+      <Name>BookStore.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
